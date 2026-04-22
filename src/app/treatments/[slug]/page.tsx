@@ -110,15 +110,17 @@ export default function TreatmentDetailPage({ params }: Props) {
                 </p>
 
                 {/* Quick info */}
-                <div className="grid grid-cols-2 gap-4 mb-8">
+                <div className={`grid gap-4 mb-8 ${treatment.sessions ? 'grid-cols-2' : 'grid-cols-1 max-w-xs'}`}>
                   <div className="bg-white rounded-xl p-4 border border-cream-200">
                     <p className="font-body text-[10px] tracking-wide text-charcoal/40 uppercase mb-1">Duration</p>
                     <p className="font-display text-base text-charcoal">{treatment.duration}</p>
                   </div>
-                  <div className="bg-white rounded-xl p-4 border border-cream-200">
-                    <p className="font-body text-[10px] tracking-wide text-charcoal/40 uppercase mb-1">Sessions</p>
-                    <p className="font-display text-base text-charcoal">{treatment.sessions}</p>
-                  </div>
+                  {treatment.sessions && (
+                    <div className="bg-white rounded-xl p-4 border border-cream-200">
+                      <p className="font-body text-[10px] tracking-wide text-charcoal/40 uppercase mb-1">Sessions</p>
+                      <p className="font-display text-base text-charcoal">{treatment.sessions}</p>
+                    </div>
+                  )}
                 </div>
 
                 {/* CTAs */}
@@ -130,7 +132,7 @@ export default function TreatmentDetailPage({ params }: Props) {
                     Book This Treatment
                   </Link>
                   <a
-                    href={`https://wa.me/923249874690?text=Hi%20I%20want%20to%20book%20${encodeURIComponent(treatment.name)}%20at%20Zahra%20Dermatologist%20Faisalabad`}
+                    href={`https://wa.me/923047064092?text=Hi%20I%20want%20to%20book%20${encodeURIComponent(treatment.name)}%20at%20Zahra%20Dermatologist%20Faisalabad`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="font-body text-sm bg-[#25D366] text-white px-6 py-3 rounded-full hover:opacity-90 transition-all text-center"

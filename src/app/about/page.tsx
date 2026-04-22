@@ -24,7 +24,7 @@ const specializations = [
   { name: 'HydraFacial', icon: '◇', desc: 'Deep cleansing and hydration therapy' },
   { name: 'Acne Management', icon: '○', desc: 'Medical-grade acne & scar treatment' },
   { name: 'Laser Treatments', icon: '∿', desc: 'Carbon laser, hair removal & more' },
-  { name: 'Alopecia Treatment', icon: '⬡', desc: 'Specialized patchy hair loss protocols' },
+  { name: 'IV Whitening Drips', icon: '⬡', desc: 'Glutathione IV drips for full-body skin brightening' },
 ]
 
 const clinicFeatures = [
@@ -121,12 +121,12 @@ export default function AboutPage() {
                     Book with Dr. Kubra
                   </Link>
                   <a
-                    href="https://wa.me/923249874690"
+                    href="https://wa.me/923047064092"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="font-body text-sm border border-gold text-gold px-7 py-3 rounded-full hover:bg-gold hover:text-white transition-all text-center"
                   >
-                    WhatsApp: 0324 987 4690
+                    WhatsApp: 0304 706 4092
                   </a>
                 </div>
               </div>
@@ -248,12 +248,12 @@ export default function AboutPage() {
                       📞 0304 706 4092
                     </a>
                     <a
-                      href="https://wa.me/923249874690"
+                      href="https://wa.me/923047064092"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block font-body text-sm text-white/70 hover:text-gold transition-colors"
                     >
-                      💬 WhatsApp: 0324 987 4690
+                      💬 WhatsApp: 0304 706 4092
                     </a>
                     <a
                       href="https://www.instagram.com/drkubramunawar.aesthetics"

@@ -11,7 +11,7 @@ export interface Treatment {
   description: string   // Full description (for SEO meta description)
   benefits: string[]
   duration: string
-  sessions: string
+  sessions?: string
   icon: string          // Emoji icon for visual appeal
   category: 'hair' | 'skin' | 'body' | 'laser'
   featured: boolean     // Show on homepage?
@@ -34,8 +34,7 @@ export const treatments: Treatment[] = [
       'Natural, non-surgical approach',
       'No downtime required',
     ],
-    duration: '45-60 minutes',
-    sessions: '3-6 sessions recommended',
+    duration: '45-50 minutes',
     icon: '✦',
     category: 'hair',
     featured: true,
@@ -46,11 +45,38 @@ export const treatments: Treatment[] = [
       'advanced hair regrowth Faisalabad',
     ],
   },
+  {
+    id: 'skin-exosomes',
+    slug: 'exosomes-skin-treatment-faisalabad',
+    name: 'Exosomes Skin Treatment',
+    tagline: 'Stem cell-powered skin rejuvenation & anti-aging',
+    description:
+      'Exosomes skin treatment delivers nano-sized stem cell vesicles directly into the skin to stimulate collagen, reverse aging signs, reduce pigmentation, and restore a youthful glow. The most advanced non-surgical skin rejuvenation available in Faisalabad.',
+    benefits: [
+      'Stimulates collagen and elastin production',
+      'Reduces fine lines and wrinkles',
+      'Brightens dull and pigmented skin',
+      'Improves overall skin texture and tone',
+      'Natural, non-surgical with no downtime',
+    ],
+    duration: '45-50 minutes',
+    sessions: '3-5 sessions recommended',
+    icon: '✦',
+    category: 'skin',
+    featured: false,
+    keywords: [
+      'exosomes skin treatment Faisalabad',
+      'skin exosome therapy Faisalabad',
+      'exosome facial Faisalabad',
+      'stem cell skin treatment Faisalabad',
+      'anti-aging exosomes Faisalabad',
+    ],
+  },
   // ⭐ FEATURED: Second major keyword target
   {
     id: 'prp-hair',
     slug: 'prp-hair-treatment-faisalabad',
-    name: 'PRP Hair Therapy',
+    name: 'PRP Treatment',
     tagline: 'Platelet-rich plasma to awaken your hair follicles',
     description:
       'PRP (Platelet-Rich Plasma) hair treatment uses your own blood\'s growth factors to stimulate hair regrowth. A proven, natural solution for hair thinning, alopecia, and patchy hair loss in men and women in Faisalabad.',
@@ -61,7 +87,7 @@ export const treatments: Treatment[] = [
       'Safe with no allergic reactions',
       'Suitable for both men and women',
     ],
-    duration: '60-75 minutes',
+    duration: '45-50 minutes',
     sessions: '3-4 sessions, monthly intervals',
     icon: '◈',
     category: 'hair',
@@ -87,7 +113,7 @@ export const treatments: Treatment[] = [
       'No redness or downtime',
       'Suitable for sensitive skin',
     ],
-    duration: '60-90 minutes',
+    duration: '45-50 minutes',
     sessions: 'Monthly maintenance recommended',
     icon: '◇',
     category: 'skin',

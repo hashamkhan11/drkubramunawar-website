@@ -405,7 +405,7 @@ export default function HomePage() {
                 Book Online
               </Link>
               <a
-                href="https://wa.me/923249874690?text=Hi%20I%20want%20to%20book%20an%20appointment"
+                href="https://wa.me/923047064092?text=Hi%20I%20want%20to%20book%20an%20appointment"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-body text-sm tracking-wide bg-[#25D366] text-white px-8 py-4 rounded-full hover:opacity-90 transition-all flex items-center justify-center gap-2"

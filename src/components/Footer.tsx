@@ -99,12 +99,12 @@ export default function Footer() {
               </a>
               {/* WhatsApp */}
               <a
-                href="https://wa.me/923249874690"
+                href="https://wa.me/923047064092"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block text-sm text-white/60 hover:text-gold transition-colors"
               >
-                WhatsApp: 0324 987 4690
+                WhatsApp: 0304 706 4092
               </a>
               {/* Hours */}
               <div className="text-sm text-white/60">

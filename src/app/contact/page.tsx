@@ -156,12 +156,12 @@ export default function ContactPage() {
                   <div>
                     <p className="font-body text-xs tracking-wide text-charcoal/40 uppercase mb-1">WhatsApp</p>
                     <a
-                      href="https://wa.me/923249874690"
+                      href="https://wa.me/923047064092"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="font-body text-sm text-charcoal hover:text-gold transition-colors"
                     >
-                      0324 987 4690
+                      0304 706 4092
                     </a>
                   </div>
                 </div>
@@ -198,7 +198,7 @@ export default function ContactPage() {
 
                 {/* Quick WhatsApp button */}
                 <a
-                  href="https://wa.me/923249874690?text=Hi%20I%20want%20to%20book%20an%20appointment%20at%20Zahra%20Dermatologist"
+                  href="https://wa.me/923047064092?text=Hi%20I%20want%20to%20book%20an%20appointment%20at%20Zahra%20Dermatologist"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 bg-[#25D366] text-white px-5 py-3 rounded-full text-sm font-body hover:opacity-90 transition-all w-full justify-center"
@@ -228,7 +228,7 @@ export default function ContactPage() {
                   {status === 'error' && (
                     <div className="bg-red-50 border border-red-200 rounded-xl p-4 mb-6">
                       <p className="font-body text-sm text-red-700">
-                        Something went wrong. Please WhatsApp us directly at 0324 987 4690.
+                        Something went wrong. Please WhatsApp us directly at 0304 706 4092.
                       </p>
                     </div>
                   )}
