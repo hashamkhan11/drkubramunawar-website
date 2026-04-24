@@ -4,6 +4,7 @@
 // This is the #1 reason Next.js beats regular React for SEO.
 
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
@@ -204,20 +205,17 @@ export default function HomePage() {
         <section className="py-20 sm:py-28 bg-cream-100">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              {/* Image placeholder */}
+              {/* Doctor Photo */}
               <div className="relative">
-                <div
-                  className="rounded-3xl overflow-hidden aspect-[4/5] flex items-center justify-center"
-                  style={{ background: 'linear-gradient(135deg, #F0E6D3, #D4B896)' }}
-                >
-                  {/* Replace this div with <Image> tag when you have a photo */}
-                  <div className="text-center p-8">
-                    <div className="w-24 h-24 rounded-full bg-white/50 mx-auto mb-4 flex items-center justify-center">
-                      <span className="font-display text-4xl text-gold">KM</span>
-                    </div>
-                    <p className="font-body text-sm text-charcoal/60">Photo Coming Soon</p>
-                    <p className="font-display text-lg text-charcoal mt-2">Dr. Kubra Munawar</p>
-                  </div>
+                <div className="rounded-3xl overflow-hidden aspect-[4/5] relative">
+                  <Image
+                    src="/profile-pic.png"
+                    alt="Dr. Kubra Munawar - Dermatologist & Aesthetic Physician Faisalabad"
+                    fill
+                    className="object-cover object-top"
+                    priority
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
                 </div>
                 {/* Floating badge */}
                 <div className="absolute -bottom-4 -right-4 bg-charcoal text-white rounded-2xl p-4 shadow-lg">
@@ -253,7 +251,7 @@ export default function HomePage() {
                     'HydraFacial',
                     'Acne Management',
                     'Laser Treatments',
-                    'Alopecia Treatment',
+                    'IV Whitening Drips',
                   ].map((spec) => (
                     <div key={spec} className="flex items-center gap-2">
                       <div className="w-1 h-1 rounded-full bg-gold flex-shrink-0" />
