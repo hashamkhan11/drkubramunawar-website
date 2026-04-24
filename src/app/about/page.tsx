@@ -4,6 +4,7 @@
 // Medical sites without a proper "About the Doctor" page rank significantly lower.
 
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
@@ -49,31 +50,16 @@ export default function AboutPage() {
         >
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              {/* Photo placeholder */}
+              {/* Doctor Photo */}
               <div className="order-2 lg:order-1">
-                <div
-                  className="rounded-3xl overflow-hidden aspect-[3/4] max-w-sm mx-auto lg:mx-0 flex items-center justify-center relative"
-                  style={{ background: 'linear-gradient(160deg, #E8D5B7, #C9A882)' }}
-                >
-                  {/* 📸 Replace this with actual doctor photo using Next.js Image component:
-                      import Image from 'next/image'
-                      <Image src="/dr-kubra.jpg" alt="Dr. Kubra Munawar - Dermatologist Faisalabad"
-                             fill className="object-cover" />
-                  */}
-                  <div className="text-center p-10">
-                    <div className="w-28 h-28 rounded-full bg-white/40 backdrop-blur-sm mx-auto mb-5 flex items-center justify-center">
-                      <span className="font-display text-5xl text-white/80">KM</span>
-                    </div>
-                    <p className="font-display text-2xl text-white">Dr. Kubra Munawar</p>
-                    <p className="font-body text-sm text-white/70 mt-1 tracking-wide">
-                      Dermatologist & Aesthetic Physician
-                    </p>
-                  </div>
-
-                  {/* Decorative corner element */}
-                  <div
-                    className="absolute bottom-0 left-0 right-0 h-1"
-                    style={{ background: 'linear-gradient(90deg, transparent, #B8976A, transparent)' }}
+                <div className="rounded-3xl overflow-hidden aspect-[3/4] max-w-sm mx-auto lg:mx-0 relative">
+                  <Image
+                    src="/profile-pic.png"
+                    alt="Dr. Kubra Munawar - Dermatologist & Aesthetic Physician Faisalabad"
+                    fill
+                    className="object-cover object-top"
+                    priority
+                    sizes="(max-width: 768px) 100vw, 384px"
                   />
                 </div>
               </div>
