@@ -420,7 +420,7 @@ export default function HomePage() {
             {/* Google Maps embed */}
             <div className="rounded-2xl overflow-hidden border border-cream-200 h-64 sm:h-80">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.0!2d73.0851!3d31.4697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sMadni+Chowk+Samanabad+Faisalabad!5e0!3m2!1sen!2spk!4v1"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.979455629494!2d73.0684543!3d31.387130000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39225d0010506a71%3A0xeca805f28be1486f!2sDr%20Kubra%20Munawar%20Aesthetics!5e0!3m2!1sen!2s!4v1777049293810!5m2!1sen!2s"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

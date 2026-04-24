@@ -143,8 +143,8 @@ export default function RootLayout({
               // GPS coordinates for Google Maps
               geo: {
                 '@type': 'GeoCoordinates',
-                latitude: 31.4697,
-                longitude: 73.0851,
+                latitude: 31.38713,
+                longitude: 73.06845,
               },
               // Opening hours from Google Business Profile
               openingHoursSpecification: [
